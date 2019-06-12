@@ -1,22 +1,17 @@
-# test-vuet
+# vuetify-nuxt-repro
 
-> My stellar Nuxt.js project
+> To reproduce the production bug of certain vuetify styles not being preloaded on server side rendering with nuxt
+> https://stackoverflow.com/questions/56435419/nuxt-production-mode-loading-resources-late?noredirect=1#comment99466324_56435419
 
 ## Build Setup
 
 ``` bash
 # install dependencies
-$ yarn install
-
-# serve with hot reload at localhost:3000
-$ yarn run dev
+$ yarn 
 
 # build for production and launch server
 $ yarn run build
 $ yarn start
-
-# generate static project
-$ yarn run generate
 ```
 
-For detailed explanation on how things work, checkout [Nuxt.js docs](https://nuxtjs.org).
+Hit refresh and make sure to disable cache in the dev tools network tab
