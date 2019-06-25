@@ -1,6 +1,6 @@
 import Sass from 'sass'
 import dotenv from 'dotenv'
-import vuetifyLoader from './src/plugins/vuetify-loader'
+import VuetifyLoaderPlugin from 'vuetify-loader/lib/plugin'
 dotenv.config()
 
 const config = {
@@ -13,11 +13,11 @@ const config = {
     },
 
     // Global css
-    css: [{ src: '~/assets/style/vuetify.styl', lang: 'styl' }],
+    css: [{ src: '~/assets/style/vuetify.styl', lang: 'styl',ssr:false }],
 
     // Change src directory
     srcDir: 'src/',
-
+    // Plugins
     plugins: [
         { src: '@/plugins/vuetify' }
     ],
@@ -66,9 +66,7 @@ const config = {
 
         // Vuetify Loader - To auto load your components
         transpile: [/^vuetify/],
-        plugins: [
-            vuetifyLoader
-        ]
+        plugins: [new VuetifyLoaderPlugin()]
     }
 }
 

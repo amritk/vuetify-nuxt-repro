@@ -1,13 +1,8 @@
 import Vue from 'vue'
 import Vuetify from 'vuetify/lib'
 
+
 Vue.use(Vuetify, {
-    options: {
-        customProperties: true,
-        minifyTheme: css => {
-            return process.env.NODE_ENV !== 'development' ? css.replace(/[\s|\r\n|\r|\n]/g, '') : css
-        }
-    },
     theme: {
         // HC Green
         primary: {
