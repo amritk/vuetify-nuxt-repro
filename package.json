@@ -31,7 +31,7 @@
         "google-maps-infobox": "^2.0.0",
         "iv-viewer": "github:amritk/ImageViewer#master",
         "lodash.debounce": "^4.0.8",
-        "node-sass": "^4.12.0",
+        "node-sass": "^7.0.0",
         "nuxt": "^2.8.1",
         "nuxt-class-component": "^1.3.0",
         "nuxt-property-decorator": "^2.3.0",
